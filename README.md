@@ -17,3 +17,10 @@ git clone https://github.com/Nonyphil/bridgepay-landing.git
 Open the project folder.
 Double - click **index.html or open it in your Web browser.
 No installation or dependencies are required. 
+</> Bash
+git init
+git add.
+git commit -m "Initial commit"
+git branch -M main
+git remote add origin https://github.com/Nonyphil/bridgepay-landing.git
+git push -u origin main
