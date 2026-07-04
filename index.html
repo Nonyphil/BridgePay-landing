@@ -1,0 +1,560 @@
+<html><body><br></body></html><html><body><div align="left">
+ <font style="font-size:16;">&lt;!DOCTYPE&nbsp;html&gt;</font>
+</div></body></html><html><body><div align="left">
+ <font style="font-size:16;"><font style="font-size:16;">&lt;html&nbsp;lang="en"&gt;</font></font>
+</div></body></html><html><body><div align="left">
+ <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&lt;head&gt;</font></font></font>
+</div></body></html><html><body><div align="left">
+ <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&lt;meta&nbsp;charset="UTF-8"&gt;</font></font></font></font>
+</div></body></html><html><body><div align="left">
+ <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&lt;meta&nbsp;name="viewport"&nbsp;content="width=device-width,&nbsp;initial-scale=1.0"&gt;</font></font></font></font>
+</div></body></html><html><body><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><br>
+   <div align="left">
+    <font style="font-size:16;">&lt;title&gt;BridgePay&nbsp;|&nbsp;Send&nbsp;Money&nbsp;Everywhere&lt;/title&gt;</font>
+   </div><font style="font-size:16;"><br>
+    <div align="left">
+     <font style="font-size:16;">&lt;style&gt;</font>
+    </div>
+    <div align="left">
+     <font style="font-size:16;"><font style="font-size:16;">*{</font></font>
+    </div>
+    <div align="left">
+     <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;margin:0;</font></font></font>
+    </div>
+    <div align="left">
+     <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;padding:0;</font></font></font></font>
+    </div>
+    <div align="left">
+     <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;box-sizing:border-box;</font></font></font></font>
+    </div>
+    <div align="left">
+     <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;font-family:Arial,&nbsp;Helvetica,&nbsp;sans-serif;</font></font></font></font>
+    </div>
+    <div align="left">
+     <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">}</font></font></font></font>
+    </div><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><br>
+       <div align="left">
+        <font style="font-size:16;">body{</font>
+       </div>
+       <div align="left">
+        <font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;background:#4A0E17;</font></font>
+       </div>
+       <div align="left">
+        <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;color:#0B132B;</font></font></font>
+       </div>
+       <div align="left">
+        <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">}</font></font></font></font>
+       </div><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><br>
+          <div align="left">
+           <font style="font-size:16;">header{</font>
+          </div>
+          <div align="left">
+           <font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;background:#6B1124;</font></font>
+          </div>
+          <div align="left">
+           <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;color:white;</font></font></font>
+          </div>
+          <div align="left">
+           <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;padding:20px&nbsp;8%;</font></font></font></font>
+          </div>
+          <div align="left">
+           <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;display:flex;</font></font></font></font>
+          </div>
+          <div align="left">
+           <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;justify-content:space-between;</font></font></font></font>
+          </div>
+          <div align="left">
+           <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;align-items:center;</font></font></font></font>
+          </div>
+          <div align="left">
+           <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">}</font></font></font></font>
+          </div><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><br>
+             <div align="left">
+              <font style="font-size:16;">nav&nbsp;a{</font>
+             </div>
+             <div align="left">
+              <font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;color:white;</font></font>
+             </div>
+             <div align="left">
+              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;text-decoration:none;</font></font></font>
+             </div>
+             <div align="left">
+              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;margin-left:20px;</font></font></font></font>
+             </div>
+             <div align="left">
+              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">}</font></font></font></font>
+             </div><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><br>
+                <div align="left">
+                 <font style="font-size:16;">.hero{</font>
+                </div>
+                <div align="left">
+                 <font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;padding:80px&nbsp;8%;</font></font>
+                </div>
+                <div align="left">
+                 <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;display:grid;</font></font></font>
+                </div>
+                <div align="left">
+                 <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;grid-template-columns:1fr&nbsp;1fr;</font></font></font></font>
+                </div>
+                <div align="left">
+                 <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;gap:40px;</font></font></font></font>
+                </div>
+                <div align="left">
+                 <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;align-items:center;</font></font></font></font>
+                </div>
+                <div align="left">
+                 <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;background:linear-gradient(135deg,#6B1124,#B8325A);</font></font></font></font>
+                </div>
+                <div align="left">
+                 <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;color:white;</font></font></font></font>
+                </div>
+                <div align="left">
+                 <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">}</font></font></font></font>
+                </div><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><br>
+                   <div align="left">
+                    <font style="font-size:16;">.hero&nbsp;h2{</font>
+                   </div>
+                   <div align="left">
+                    <font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;font-size:48px;</font></font>
+                   </div>
+                   <div align="left">
+                    <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">}</font></font></font>
+                   </div><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><br>
+                      <div align="left">
+                       <font style="font-size:16;">.hero&nbsp;p{</font>
+                      </div>
+                      <div align="left">
+                       <font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;font-size:20px;</font></font>
+                      </div>
+                      <div align="left">
+                       <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;margin:20px&nbsp;0;</font></font></font>
+                      </div>
+                      <div align="left">
+                       <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">}</font></font></font></font>
+                      </div><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><br>
+                         <div align="left">
+                          <font style="font-size:16;">.btn{</font>
+                         </div>
+                         <div align="left">
+                          <font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;display:inline-block;</font></font>
+                         </div>
+                         <div align="left">
+                          <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;background:white;</font></font></font>
+                         </div>
+                         <div align="left">
+                          <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;color:#6B1124;</font></font></font></font>
+                         </div>
+                         <div align="left">
+                          <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;padding:14px&nbsp;25px;</font></font></font></font>
+                         </div>
+                         <div align="left">
+                          <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;border-radius:30px;</font></font></font></font>
+                         </div>
+                         <div align="left">
+                          <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;text-decoration:none;</font></font></font></font>
+                         </div>
+                         <div align="left">
+                          <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;font-weight:bold;</font></font></font></font>
+                         </div>
+                         <div align="left">
+                          <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">}</font></font></font></font>
+                         </div><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><br>
+                            <div align="left">
+                             <font style="font-size:16;">.transfer-card{</font>
+                            </div>
+                            <div align="left">
+                             <font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;background:white;</font></font>
+                            </div>
+                            <div align="left">
+                             <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;padding:30px;</font></font></font>
+                            </div>
+                            <div align="left">
+                             <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;border-radius:18px;</font></font></font></font>
+                            </div>
+                            <div align="left">
+                             <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;box-shadow:0&nbsp;10px&nbsp;30px&nbsp;#0004;</font></font></font></font>
+                            </div>
+                            <div align="left">
+                             <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">}</font></font></font></font>
+                            </div><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><br>
+                              <div align="left">
+                              <font style="font-size:16;">input,select,button{</font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;width:100%;</font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;padding:14px;</font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;margin:10px&nbsp;0;</font></font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;border-radius:10px;</font></font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;border:1px&nbsp;solid&nbsp;#ddd;</font></font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">}</font></font></font></font>
+                              </div><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><br>
+                              <div align="left">
+                              <font style="font-size:16;">button{</font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;background:#6B1124;</font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;color:white;</font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;cursor:pointer;</font></font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">}</font></font></font></font>
+                              </div><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><br>
+                              <div align="left">
+                              <font style="font-size:16;">.features{</font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;background:#f7fbff;</font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;padding:70px&nbsp;8%;</font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;text-align:center;</font></font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">}</font></font></font></font>
+                              </div><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><br>
+                              <div align="left">
+                              <font style="font-size:16;">.feature-grid{</font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;display:grid;</font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;grid-template-columns:repeat(3,1fr);</font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;gap:25px;</font></font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;margin-top:30px;</font></font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">}</font></font></font></font>
+                              </div><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><br>
+                              <div align="left">
+                              <font style="font-size:16;">.feature{</font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;background:white;</font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;padding:30px;</font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;border-radius:18px;</font></font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;box-shadow:0&nbsp;8px&nbsp;25px&nbsp;#0002;</font></font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">}</font></font></font></font>
+                              </div><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><br>
+                              <div align="left">
+                              <font style="font-size:16;">.feature&nbsp;h3{</font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;color:#6B1124;</font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">}</font></font></font>
+                              </div><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><br>
+                              <div align="left">
+                              <font style="font-size:16;">footer{</font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;background:#6B1124;</font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;color:white;</font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;text-align:center;</font></font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;padding:25px;</font></font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">}</font></font></font></font>
+                              </div><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><br>
+                              <div align="left">
+                              <font style="font-size:16;">@media(max-width:800px){</font>
+                              </div><font style="font-size:16;"><br>
+                              <div align="left">
+                              <font style="font-size:16;">.hero,</font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;">.feature-grid{</font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;grid-template-columns:1fr;</font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">}</font></font></font></font>
+                              </div><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><br>
+                              <div align="left">
+                              <font style="font-size:16;">header{</font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;">&nbsp;flex-direction:column;</font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;gap:15px;</font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">}</font></font></font></font>
+                              </div><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><br>
+                              <div align="left">
+                              <font style="font-size:16;">.hero&nbsp;h2{</font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;">&nbsp;font-size:36px;</font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">}</font></font></font>
+                              </div><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><br>
+                              <div align="left">
+                              <font style="font-size:16;">}</font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;">&lt;/style&gt;</font></font>
+                              </div><font style="font-size:16;"><font style="font-size:16;"><br>
+                              <div align="left">
+                              <font style="font-size:16;">&lt;/head&gt;</font>
+                              </div><font style="font-size:16;"><br>
+                              <div align="left">
+                              <font style="font-size:16;">&lt;body&gt;</font>
+                              </div><font style="font-size:16;"><br>
+                              <div align="left">
+                              <font style="font-size:16;">&lt;header&gt;</font>
+                              </div><font style="font-size:16;"><br>
+                              <div align="left">
+                              <font style="font-size:16;">&lt;h1&gt;BridgePay&lt;/h1&gt;</font>
+                              </div><font style="font-size:16;"><br>
+                              <div align="left">
+                              <font style="font-size:16;">&lt;nav&gt;</font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;">&lt;a&nbsp;href="#"&gt;Home&lt;/a&gt;</font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&lt;a&nbsp;href="#"&gt;Features&lt;/a&gt;</font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&lt;a&nbsp;href="#"&gt;Support&lt;/a&gt;</font></font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&lt;/nav&gt;</font></font></font></font>
+                              </div><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><br>
+                              <div align="left">
+                              <font style="font-size:16;">&lt;/header&gt;</font>
+                              </div><font style="font-size:16;"><br><br>
+                              <div align="left">
+                              <font style="font-size:16;">&lt;section&nbsp;class="hero"&gt;</font>
+                              </div><font style="font-size:16;"><br>
+                              <div align="left">
+                              <font style="font-size:16;">&lt;div&gt;</font>
+                              </div><font style="font-size:16;"><br>
+                              <div align="left">
+                              <font style="font-size:16;">&lt;h2&gt;</font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;">International&nbsp;transfers&nbsp;you&nbsp;can&nbsp;trust</font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&lt;/h2&gt;</font></font></font>
+                              </div><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><br>
+                              <div align="left">
+                              <font style="font-size:16;">&lt;p&gt;</font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;">BridgePay&nbsp;connects&nbsp;people&nbsp;and&nbsp;businesses&nbsp;worldwide</font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">with&nbsp;fast,&nbsp;secure,&nbsp;and&nbsp;simple&nbsp;global&nbsp;payments.</font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&lt;/p&gt;</font></font></font></font>
+                              </div><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><br>
+                              <div align="left">
+                              <font style="font-size:16;">&lt;a&nbsp;class="btn"&nbsp;href="#"&gt;</font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;">Get&nbsp;Started</font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&lt;/a&gt;</font></font></font>
+                              </div><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><br>
+                              <div align="left">
+                              <font style="font-size:16;">&lt;/div&gt;</font>
+                              </div><font style="font-size:16;"><br><br>
+                              <div align="left">
+                              <font style="font-size:16;">&lt;div&nbsp;class="transfer-card"&gt;</font>
+                              </div><font style="font-size:16;"><br>
+                              <div align="left">
+                              <font style="font-size:16;">&lt;h3&gt;Start&nbsp;a&nbsp;Transfer&lt;/h3&gt;</font>
+                              </div><font style="font-size:16;"><br>
+                              <div align="left">
+                              <font style="font-size:16;">&lt;form&gt;</font>
+                              </div><font style="font-size:16;"><br>
+                              <div align="left">
+                              <font style="font-size:16;">&lt;label&gt;Amount&lt;/label&gt;</font>
+                              </div><font style="font-size:16;"><br>
+                              <div align="left">
+                              <font style="font-size:16;">&lt;input&nbsp;type="number"&nbsp;placeholder="Enter&nbsp;amount"&gt;</font>
+                              </div><font style="font-size:16;"><br><br>
+                              <div align="left">
+                              <font style="font-size:16;">&lt;label&gt;Destination&nbsp;Country&lt;/label&gt;</font>
+                              </div><font style="font-size:16;"><br>
+                              <div align="left">
+                              <font style="font-size:16;">&lt;select&gt;</font>
+                              </div><font style="font-size:16;"><br>
+                              <div align="left">
+                              <font style="font-size:16;">&lt;option&gt;Select&nbsp;country&lt;/option&gt;</font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;">&lt;option&gt;United&nbsp;States&lt;/option&gt;</font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&lt;option&gt;United&nbsp;Kingdom&lt;/option&gt;</font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&lt;option&gt;China&lt;/option&gt;</font></font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&lt;option&gt;Turkey&lt;/option&gt;</font></font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&lt;option&gt;Nigeria&lt;/option&gt;</font></font></font></font>
+                              </div><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><br>
+                              <div align="left">
+                              <font style="font-size:16;">&lt;/select&gt;</font>
+                              </div><font style="font-size:16;"><br><br>
+                              <div align="left">
+                              <font style="font-size:16;">&lt;button&nbsp;type="submit"&gt;</font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;">Continue&nbsp;Transfer</font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&lt;/button&gt;</font></font></font>
+                              </div><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><br>
+                              <div align="left">
+                              <font style="font-size:16;">&lt;/form&gt;</font>
+                              </div><font style="font-size:16;"><br>
+                              <div align="left">
+                              <font style="font-size:16;">&lt;/div&gt;</font>
+                              </div><font style="font-size:16;"><br>
+                              <div align="left">
+                              <font style="font-size:16;">&lt;/section&gt;</font>
+                              </div><font style="font-size:16;"><br><br><br>
+                              <div align="left">
+                              <font style="font-size:16;">&lt;section&nbsp;class="features"&gt;</font>
+                              </div><font style="font-size:16;"><br>
+                              <div align="left">
+                              <font style="font-size:16;">&lt;h2&gt;</font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;">Everything&nbsp;To&nbsp;Get&nbsp;You&nbsp;Started</font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&lt;/h2&gt;</font></font></font>
+                              </div><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><br><br>
+                              <div align="left">
+                              <font style="font-size:16;">&lt;div&nbsp;class="feature-grid"&gt;</font>
+                              </div><font style="font-size:16;"><br>
+                              <div align="left">
+                              <font style="font-size:16;">&lt;div&nbsp;class="feature"&gt;</font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;">&lt;h3&gt;Send&lt;/h3&gt;</font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&lt;p&gt;</font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">Fast&nbsp;transfers,&nbsp;great&nbsp;rates,</font></font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">and&nbsp;secure&nbsp;payments.</font></font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&lt;/p&gt;</font></font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&lt;/div&gt;</font></font></font></font>
+                              </div><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><br><br>
+                              <div align="left">
+                              <font style="font-size:16;">&lt;div&nbsp;class="feature"&gt;</font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;">&lt;h3&gt;Track&lt;/h3&gt;</font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&lt;p&gt;</font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">Get&nbsp;live&nbsp;updates&nbsp;on&nbsp;every&nbsp;transfer.</font></font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&lt;/p&gt;</font></font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&lt;/div&gt;</font></font></font></font>
+                              </div><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><br><br>
+                              <div align="left">
+                              <font style="font-size:16;">&lt;div&nbsp;class="feature"&gt;</font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;">&lt;h3&gt;Learn&lt;/h3&gt;</font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&lt;p&gt;</font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">Discover&nbsp;tips&nbsp;and&nbsp;advice</font></font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">to&nbsp;save&nbsp;money&nbsp;abroad.</font></font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&lt;/p&gt;</font></font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&lt;/div&gt;</font></font></font></font>
+                              </div><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><br>
+                              <div align="left">
+                              <font style="font-size:16;">&lt;/div&gt;</font>
+                              </div><font style="font-size:16;"><br>
+                              <div align="left">
+                              <font style="font-size:16;">&lt;/section&gt;</font>
+                              </div><font style="font-size:16;"><br><br><br>
+                              <div align="left">
+                              <font style="font-size:16;">&lt;footer&gt;</font>
+                              </div><font style="font-size:16;"><br>
+                              <div align="left">
+                              <font style="font-size:16;">©&nbsp;2026&nbsp;BridgePay.&nbsp;Making&nbsp;payments&nbsp;easy.</font>
+                              </div><font style="font-size:16;"><br>
+                              <div align="left">
+                              <font style="font-size:16;">&lt;/footer&gt;</font>
+                              </div><font style="font-size:16;"><br><br>
+                              <div align="left">
+                              <font style="font-size:16;">&lt;/body&gt;</font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;">&lt;/html&gt;</font></font>
+                              </div></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></body></html>
